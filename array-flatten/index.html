@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function flatten(array) {
+      let flat = false
+      while(flat === false) {
+        let newArray = []
+        for (let i = 0; i <= array.length - 1; i++) {
+          if (typeof array[i] === 'object') {
+            newArray = newArray.concat(array[i])
+          } else {
+            newArray.push(array[i])
+          }
+        }
+        array = newArray
+        if (array.every((element) => typeof element !== 'object')) {
+          flat = true;
+        }
+      }
+      return array
+    }
+    console.log(flatten([1, 2, [3, 4, [5]]]))
+
+  </script>
+</body>
+</html>
