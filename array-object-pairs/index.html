@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const fromPairs = (array) => {
+      const keyValue = {}
+     array.forEach(element => {
+        const key1 = element[0]
+        keyValue[key1] = element[1]
+      })
+      return keyValue;
+    }
+    const data = [['a', 1], ['b', 2]];
+    console.log(fromPairs(data))
+  </script>
+</body>
+</html>
