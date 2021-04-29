@@ -7,6 +7,24 @@
 </head>
 <body>
   <script>
+    function titleCase(string) {
+      const stringArray = string.split('')
+      stringArray[0] = stringArray[0].toUpperCase();
+      if(!stringArray.includes(' ', '-')){
+        string = stringArray.join("")
+        return string
+      }
+
+      for(let i = 0; i<=stringArray.length-1; i++) {
+        if(stringArray[i] === ' ' || stringArray[i] === '-') {
+          stringArray[i+1] = stringArray[i+1].toUpperCase();
+        }
+      }
+      string = stringArray.join("")
+      return string
+    }
+
+    console.log(titleCase('speaking Javascript: an in-depth guide for programmers'))
 
   </script>
 </body>
