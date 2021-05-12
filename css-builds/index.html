@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+    body {
+      background-color: #293462
+    }
+
+    .eye {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: #FE5F55;
+      border-radius: 50%;
+    }
+
+    .white {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      background-color: #FFF1C1;
+      border-radius: 50%;
+    }
+
+    .pupil {
+      width: 10px;
+      height: 10px;
+      background-color: #293462;
+      border-radius: 50%;
+    }
+
+    .left {
+      top: -25;
+      left: 10;
+    }
+
+    .right {
+      top: -25;
+      right: 10;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .head {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 100px;
+      background: linear-gradient(180deg, #FE5F55 70%, #A64942 60%);
+      border-radius: 3.5rem;
+    }
+
+    .nose {
+      width: 10px;
+      height: 10px;
+      background-color: #293462;
+      margin: 5px;
+      border-radius: 2rem;
+    }
+  </style>
+<body>
+  <div class="container">
+    <div class="head">
+      <div class="eye left">
+        <div class="white">
+          <div class="pupil"></div>
+        </div>
+      </div>
+      <div class="eye right">
+        <div class="white">
+          <div class="pupil"></div>
+        </div>
+      </div>
+      <div class="nose"></div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+  </div>
+
+</body>
+</html>
